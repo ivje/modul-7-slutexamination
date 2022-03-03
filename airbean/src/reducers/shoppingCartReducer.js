@@ -42,6 +42,11 @@ const shoppingCartReducer = (state = initalState, action) => {
             } else {
                 return state;
             }
+        case 'CLEAR_ALL':
+            return {
+                ...state,
+                shoppingCart: []
+            }
 
     default:
         return state;    
