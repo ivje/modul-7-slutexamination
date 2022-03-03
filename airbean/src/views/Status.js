@@ -23,7 +23,12 @@ function Status() {
             setCaptionString("Din beställning är på väg!");
             setEtaString(data.eta + " minuter");
         }
-        postOrder();
+        
+        if(shoppingCart.length == 0){
+            setCaptionString("Nej du, gå tillbaka och lägg varor i korgen först!");
+        } else {
+            postOrder();
+        }
         
     }, [])
 
