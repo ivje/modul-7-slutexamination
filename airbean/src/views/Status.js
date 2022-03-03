@@ -2,6 +2,9 @@ import './Status.css';
 import drone from '../assets/graphics/drone.svg';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { clearAllItemsFromCart } from '../actions/shoppingCartActions';
+import { useDispatch } from 'react-redux';
 
 
 function Status() {
@@ -11,6 +14,11 @@ function Status() {
     const [etaString, setEtaString] = useState("");
 
     const shoppingCart = useSelector((state) => { return state.shoppingCart });
+    const dispatch = useDispatch();
+
+    function clearShoppingCart() {
+        dispatch(clearAllItemsFromCart());
+    }
 
     useEffect(() => {
         async function postOrder() {
@@ -39,10 +47,11 @@ function Status() {
                 <img src={drone} />
                 <h1>{captionString}</h1>
                 <h4>{etaString}</h4>
-                <button><h3>Ok, cool!</h3></button>
+                <Link to="/menu" onClick={clearShoppingCart}><button ><h3>Ok, cool!</h3></button></Link>
             </div>
         </div>
     )
 }
 
 export default Status;
+
