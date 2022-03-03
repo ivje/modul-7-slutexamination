@@ -1,10 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, navigate } from 'react-router-dom';
 import './Landing.css';
 import airbeanlanding from '../assets/graphics/airbean-landing.svg';
 import leftFlower from '../assets/graphics/intro-graphic-left.svg';
 import rightFlower from '../assets/graphics/intro-graphic-right.svg';
+import { useEffect } from 'react';
 
 function Landing() {
+
+    useEffect(() => {
+        setTimeout(() => {navigate("/menu")}, 3000);
+    }, [])
 
     return (
         <div>
