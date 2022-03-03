@@ -1,0 +1,13 @@
+.addCircle {
+    height: 30px;
+    width: 30px;
+    background-color:black;
+    border-radius: 50%;
+    position: inherit;
+}
+
+.plusSign {
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+  }

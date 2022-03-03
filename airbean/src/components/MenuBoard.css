@@ -1,0 +1,10 @@
+.menuBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 150px;
+    width: inherit;
+    height: inherit;
+}

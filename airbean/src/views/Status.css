@@ -1,0 +1,75 @@
+.container {
+
+    background-color: #e5674e;
+    color: white;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      
+}
+
+button {
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 100px;
+    top: 500px;
+
+    /* Airbean - brown */
+
+    background: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50px;
+    
+}
+
+.container h3 {
+    color: black;
+}
+
+.container h2 {
+    position: absolute;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    position: absolute;
+    top: 250px;
+}
+
+.container h4 {
+    color: white;
+    position: absolute;
+    top: 400px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container img {
+    position: absolute;
+    top: 120px;
+}

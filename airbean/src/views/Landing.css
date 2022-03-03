@@ -1,0 +1,34 @@
+.landing {
+
+    background-color: #38846d;
+    color: white;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      
+}
+
+.center {
+    
+    position: absolute;
+    width: 257px;
+    height: 47px;
+    left: 58px;
+    top:  30%
+    
+}
+
+.left {
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+.right {
+    position: absolute;
+    top: 0px;
+    left: 233px;
+}
